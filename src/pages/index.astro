@@ -1,5 +1,6 @@
 ---
-import { SEO } from "astro-seo";
+import { SEO } from 'astro-seo';
+import '../assets/app.css';
 ---
 
 <html lang="en">
@@ -8,13 +9,6 @@ import { SEO } from "astro-seo";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-      :root {
-        --primary: #10b981;
-      }
-    </style>
     <SEO
       title="Sandpit Club"
       titleTemplate="%s | Melbourne Dads Community"
@@ -22,79 +16,71 @@ import { SEO } from "astro-seo";
       canonical="https://sandpit.club"
       openGraph={{
         basic: {
-          title: "Sandpit Club | Melbourne Dads Community",
-          type: "website",
-          image: "https://sandpit.club/opengraph.png",
-          url: "https://sandpit.club",
+          title: 'Sandpit Club | Melbourne Dads Community',
+          type: 'website',
+          image: 'https://sandpit.club/opengraph.png',
+          url: 'https://sandpit.club',
         },
         optional: {
-          description: "Connect with other dads in Melbourne for playdates, activities and community. Join Sandpit Club for regular meetups, a social group for dads and kids, and a supportive environment.",
-          siteName: "Sandpit Club",
-          locale: "en_AU",
+          description:
+            'Connect with other dads in Melbourne for playdates, activities and community. Join Sandpit Club for regular meetups, a social group for dads and kids, and a supportive environment.',
+          siteName: 'Sandpit Club',
+          locale: 'en_AU',
         },
         image: {
-          alt: "Sandpit Club logo",
+          alt: 'Sandpit Club logo',
           width: 1200,
           height: 630,
         },
       }}
       twitter={{
-        card: "summary_large_image",
-        title: "Sandpit Club | Melbourne Dads Community",
-        description: "Connect with other dads in Melbourne for playdates, activities and community. Join Sandpit Club for regular meetups, a social group for dads and kids, and a supportive environment.",
-        image: "https://sandpit.club/opengraph.png",
-        imageAlt: "Sandpit Club logo",
+        card: 'summary_large_image',
+        title: 'Sandpit Club | Melbourne Dads Community',
+        description:
+          'Connect with other dads in Melbourne for playdates, activities and community. Join Sandpit Club for regular meetups, a social group for dads and kids, and a supportive environment.',
+        image: 'https://sandpit.club/opengraph.png',
+        imageAlt: 'Sandpit Club logo',
       }}
     />
   </head>
   <body class="min-h-screen bg-base-100">
-  
-    <main class="container mx-auto px-4 py-8 max-w-md">
-      
-      <!-- Header -->
-      <div class="text-center mb-8">
-        <div class="inline-block relative">
-          <h1 class="text-5xl font-bold tracking-tight">Dad's Group</h1>
-          <span class="badge badge-primary absolute -top-2 -right-8 text-white font-semibold">NEW</span>
-        </div>
-      </div>
-  
-      <!-- Value Props -->
-      <div class="space-y-4 text-center mb-8">
-        <p class="text-xl font-semibold">Connect with other dads in the area</p>
-        <p class="text-xl font-semibold">Kids of all ages welcome</p>
-        <p class="text-xl font-semibold">Coffee and play in a park</p>
-        <p class="text-xl font-semibold">Regular Meetups Planned</p>
-      </div>
-  
-      <!-- CTA Card -->
-      <div class="card bg-base-200 shadow-sm">
-        <div class="card-body items-center text-center">
-          <p class="text-lg font-medium mb-4">Check the website for dates and more info</p>
-          
-          <!-- QR Code placeholder -->
-          <div class="bg-white p-4 rounded-lg mb-4">
-            <svg class="w-32 h-32" viewBox="0 0 100 100">
-              <rect width="100" height="100" fill="white"/>
-              <text x="50" y="50" text-anchor="middle" dominant-baseline="middle" font-size="8" fill="#666">QR Code</text>
-            </svg>
+    <main>
+      <div class="hero min-h-[calc(100vh-44px)]">
+        <div class="hero-content text-center">
+          <div>
+            <h1 class="text-8xl font-bold">Sandpit Club</h1>
+            <p class="mt-16 text-2xl font-semibold">
+              Connect with other dads in the area
+            </p>
+            <p class="mt-8 text-2xl font-semibold">Kids of all ages welcome</p>
+            <p class="mt-8 text-2xl font-semibold">Coffee and play in a park</p>
+            <p class="mt-8 text-2xl font-semibold">Regular Meetups Planned</p>
+            <button class="btn btn-lg btn-soft mt-16"
+              >Register Your Interest</button
+            >
           </div>
-  
-          <a href="https://sandpit.club" class="link link-primary text-xl font-semibold">sandpit.club</a>
         </div>
       </div>
-  
-      <!-- Join Button -->
-      <div class="mt-8 text-center">
-        <a href="#join" class="btn btn-primary btn-lg text-white w-full">Join the Group</a>
+      <div class="card bg-base-100 w-140 mx-auto">
+        <div class="card-body">
+          <h2 class="card-title">Upcoming meetups</h2>
+          <ul class="space-y-2 text-left">
+            <li>
+              <span class="font-semibold">Sat 24 Jan · 10:00am</span>
+              <span class="block text-sm text-base-content/70">
+                Beaton Reserve, Yarraville – casual play and coffee
+              </span>
+            </li>
+            <div class="mt-4">
+              <div class="skeleton h-4 w-36"></div>
+              <div class="skeleton h-4 w-82 mt-2"></div>
+            </div>
+            <p class="mt-4 text-sm text-base-content/70">
+              More dates coming soon. Register your interest to get updates.
+            </p>
+          </ul>
+        </div>
       </div>
-  
-      <!-- Footer -->
-      <footer class="mt-12 text-center text-sm text-base-content/60">
-        <p>Melbourne, Australia</p>
-      </footer>
-  
     </main>
-  
   </body>
 </html>
