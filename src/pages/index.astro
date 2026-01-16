@@ -48,9 +48,15 @@ import '../assets/app.css';
       <div class="hero min-h-[calc(100vh-44px)]">
         <div class="hero-content text-center">
           <div>
-            <h1 class="text-8xl font-bold">Sandpit Club</h1>
+            <div>
+              <h1 class="text-8xl font-bold relative">
+                Sandpit Club<span
+                  class="badge badge-success absolute top-0 -right-12">New</span
+                >
+              </h1>
+            </div>
             <p class="mt-16 text-2xl font-semibold">
-              Connect with other dads in the area
+              Connect with other dads in the Yarraville area
             </p>
             <p class="mt-8 text-2xl font-semibold">Kids of all ages welcome</p>
             <p class="mt-8 text-2xl font-semibold">Coffee and play in a park</p>
@@ -58,6 +64,10 @@ import '../assets/app.css';
             <button class="btn btn-lg btn-soft mt-16"
               >Register Your Interest</button
             >
+            <p class="text-accent mt-2 text-xs font-light">
+              No sign up or personal details - it'll just let me know someone
+              was interested
+            </p>
           </div>
         </div>
       </div>
@@ -81,6 +91,18 @@ import '../assets/app.css';
           </ul>
         </div>
       </div>
+      <footer
+        class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4 mt-16"
+      >
+        <aside>
+          <p>
+            Created by Ben Mardana | <a
+              class="link"
+              href="https://benmardana.com">benmardana.com</a
+            >
+          </p>
+        </aside>
+      </footer>
     </main>
   </body>
 </html>

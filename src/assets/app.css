@@ -1,5 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
 @import "tailwindcss";
 @plugin "daisyui";
+
+@font-face {
+  font-family: "Open Dyslexic"; 
+  src: url("src/assets/fonts/OpenDyslexic-Regular.otf") format("opentype"); 
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Dyslexic"; 
+  src: url("src/assets/fonts/OpenDyslexic-Bold.otf") format("opentype"); 
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Dyslexic"; 
+  src: url("src/assets/fonts/OpenDyslexic-Italic.otf") format("opentype"); 
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Dyslexic"; 
+  src: url("src/assets/fonts/OpenDyslexic-BoldItalic.otf") format("opentype"); 
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
 
 @layer base { 
   /* 1. Use a more-intuitive box-sizing model */
@@ -56,4 +90,11 @@
   #root, #__next {
     isolation: isolate;
   }
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Dyslexic", sans-serif;
 }
