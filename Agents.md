@@ -46,3 +46,9 @@ The site is intentionally minimal, readable, and easy to maintain.
 - `pnpm dev` for local dev.
 - `pnpm build` for production build.
 - `pnpm preview` to verify the build.
+
+## Deployment
+- The project is deployed via **Cloudflare Pages**.
+- Pushing to `main` triggers a production deployment.
+- Pushing to any other branch triggers a preview deployment.
+- Preview deployments generate unique URLs for testing changes before merging to main.
