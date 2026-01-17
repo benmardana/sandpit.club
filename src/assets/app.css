@@ -1,11 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
-
 @import "tailwindcss";
 @plugin "daisyui";
 
+@plugin "daisyui" {
+  themes: pastel --default, dim --prefersdark;
+}
+
+@font-face {
+  font-family: "Lexend Deca"; 
+  src: url("./fonts/LexendDeca-Regular.ttf") format("ttf"); 
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lexend Deca"; 
+  src: url("./fonts/LexendDeca-Bold.ttf") format("ttf"); 
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lexend Deca"; 
+  src: url("./fonts/LexendDeca-SemiBold.ttf") format("ttf"); 
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 @font-face {
   font-family: "Open Dyslexic"; 
-  src: url("src/assets/fonts/OpenDyslexic-Regular.otf") format("opentype"); 
+  src: url("./fonts/OpenDyslexic-Regular.woff2") format("woff2"); 
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -13,7 +39,7 @@
 
 @font-face {
   font-family: "Open Dyslexic"; 
-  src: url("src/assets/fonts/OpenDyslexic-Bold.otf") format("opentype"); 
+  src: url("./fonts/OpenDyslexic-Bold.woff2") format("woff2"); 
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -21,7 +47,7 @@
 
 @font-face {
   font-family: "Open Dyslexic"; 
-  src: url("src/assets/fonts/OpenDyslexic-Italic.otf") format("opentype"); 
+  src: url("./fonts/OpenDyslexic-Italic.woff2") format("woff2"); 
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -29,7 +55,7 @@
 
 @font-face {
   font-family: "Open Dyslexic"; 
-  src: url("src/assets/fonts/OpenDyslexic-BoldItalic.otf") format("opentype"); 
+  src: url("./fonts/OpenDyslexic-BoldItalic.woff2") format("woff2"); 
   font-weight: bold;
   font-style: italic;
   font-display: swap;
