@@ -94,15 +94,37 @@ import '../assets/app.css';
       <footer
         class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4 mt-16"
       >
-        <aside>
-          <p>
-            Created by Ben Mardana | <a
-              class="link"
-              href="https://benmardana.com">benmardana.com</a
-            >
-          </p>
+        <aside class="flex items-center gap-4">
+          <a class="link" href="mailto:hello@sandpit.club">hello@sandpit.club</a>
+          <button class="btn btn-ghost btn-sm" onclick="about_modal.showModal()">About</button>
         </aside>
       </footer>
+
+      <!-- About Modal -->
+      <dialog id="about_modal" class="modal">
+        <div class="modal-box">
+          <h3 class="text-lg font-bold">About Sandpit Club</h3>
+          <p class="py-4">
+            Sandpit Club was created by Ben Mardana, a dad based in Melbourne's inner west.
+            The idea is simple: connect local dads for casual meetups at parks and playgrounds
+            while our kids play and we grab a coffee.
+          </p>
+          <p class="py-2">
+            Want to know more about me? Visit my personal site:
+          </p>
+          <a class="link link-primary" href="https://benmardana.com" target="_blank" rel="noopener noreferrer">
+            benmardana.com
+          </a>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
     </main>
   </body>
 </html>
