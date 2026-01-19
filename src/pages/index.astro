@@ -1,6 +1,14 @@
 ---
 import { SEO } from 'astro-seo';
 import '../assets/app.css';
+
+// Capture build date as proxy for last deployment date
+const buildDate = new Date();
+const formattedDate = buildDate.toLocaleDateString('en-AU', {
+  day: 'numeric',
+  month: 'short',
+  year: 'numeric',
+});
 ---
 
 <html lang="en">
@@ -90,6 +98,9 @@ import '../assets/app.css';
         <aside class="flex items-center gap-4">
           <a class="link" href="mailto:hello@sandpit.club">hello@sandpit.club</a>
           <button class="link" onclick="about_modal.showModal()">About</button>
+        </aside>
+        <aside class="text-sm text-base-content/60">
+          Last updated: {formattedDate}
         </aside>
       </footer>
 
