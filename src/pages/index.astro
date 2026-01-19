@@ -96,7 +96,8 @@ const formattedDate = buildDate.toLocaleDateString('en-AU', {
         class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4 mt-16"
       >
         <aside class="flex items-center gap-4">
-          <a class="link" href="mailto:hello@sandpit.club">hello@sandpit.club</a>
+          <a class="link" href="mailto:hello@sandpit.club">hello@sandpit.club</a
+          >
           <button class="link" onclick="about_modal.showModal()">About</button>
         </aside>
         <aside class="text-sm text-base-content/60">
@@ -109,12 +110,21 @@ const formattedDate = buildDate.toLocaleDateString('en-AU', {
         <div class="modal-box">
           <h3 class="text-lg font-bold">Hello 👋 Ben here,</h3>
           <p class="py-4">
-            I'm a Yarraville local with 2 kids – a toddler and a newborn. I started Sandpit Club to bring together Dads in the area in a casual setting to share our experiences and get our kids playing together. Let's support each other and our kids.
+            I'm a Yarraville local with 2 kids – a toddler and a newborn. I
+            started Sandpit Club to bring together Dads in the area in a casual
+            setting to share our experiences and get our kids playing together.
+            Let's support each other and our kids.
           </p>
           <p class="py-2">
-            You can learn a bit more about me and confirm I'm a real person at my personal website
+            You can learn a bit more about me and confirm I'm a real person at
+            my personal website
           </p>
-          <a class="link link-primary" href="https://benmardana.com" target="_blank" rel="noopener noreferrer">
+          <a
+            class="link link-primary"
+            href="https://benmardana.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             benmardana.com
           </a>
           <div class="modal-action">
@@ -128,6 +138,10 @@ const formattedDate = buildDate.toLocaleDateString('en-AU', {
         </form>
       </dialog>
     </main>
-    <script src="https://cdn.counter.dev/script.js" data-id="107c94ce-cfbd-451c-942e-9fb72048e8a7" data-utcoffset="11"></script>
+    <script
+      id="counterscale-script"
+      data-site-id="sandpit-club"
+      src="https://analytics.sandpit.club/tracker.js"
+      defer></script>
   </body>
 </html>
